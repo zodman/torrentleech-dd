@@ -1,19 +1,13 @@
 {
-    //manifest spec: http://developer.chrome.com/extensions/manifest.html
-    //required
-    "name": "Direct download link from TorrentLeach extension",
+    "name": "Direct Download TorrentLeach",
     "version": "1.0",
     "manifest_version": 2,
-
-    //recommended
-    "description": "Chrome extension for getting direct download url from torrentleach.org tracker",
+    "description": "For getting direct download url from torrentleach.org tracker",
     "icons": {
         "19": "images/icon_19.png",
         "38": "images/icon_38.png",
         "128": "images/icon_128.png"
     },
-
-    //required
     "browser_action": {
         "default_title": "browser_action: default_title",
         "default_icon": {
@@ -25,8 +19,6 @@
     "permissions": [
         "storage"
     ],
-    //additional
-  //  "options_page": "html/options.html",
     "homepage_url": "https://github.com/zodman/torrentleach-dd",
     "content_scripts": [{
         "matches": ["*://*.torrentleech.org/*"],
